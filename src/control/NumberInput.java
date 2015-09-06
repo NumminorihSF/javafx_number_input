@@ -83,5 +83,15 @@ public class NumberInput extends javafx.scene.layout.GridPane implements Observe
         model.setValue(value);
     }
 
+    public void addObserver(Observer o){
+        model.addObserver(o);
+    }
 
+    public void removeObserver(Observer o){
+        model.deleteObserver(o);
+    }
+
+    public int getValue(){
+        return model.getValue();
+    }
 }
